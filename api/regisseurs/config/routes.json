@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/regisseurs",
+      "handler": "regisseurs.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/regisseurs/count",
+      "handler": "regisseurs.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/regisseurs/:id",
+      "handler": "regisseurs.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/regisseurs",
+      "handler": "regisseurs.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/regisseurs/:id",
+      "handler": "regisseurs.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/regisseurs/:id",
+      "handler": "regisseurs.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

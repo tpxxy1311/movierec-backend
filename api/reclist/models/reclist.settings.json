@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reclists",
+  "info": {
+    "name": "Reclist"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "movies": {
+      "via": "reclists",
+      "collection": "movies",
+      "dominant": true
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "reclists",
+      "dominant": true
+    }
+  }
+}

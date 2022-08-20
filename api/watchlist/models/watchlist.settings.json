@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "watchlists",
+  "info": {
+    "name": "Watchlist"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "movies": {
+      "via": "watchlists",
+      "collection": "movies",
+      "dominant": true
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "watchlists",
+      "dominant": true
+    }
+  }
+}

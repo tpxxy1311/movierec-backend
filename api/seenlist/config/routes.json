@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/seenlists",
+      "handler": "seenlist.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/seenlists/count",
+      "handler": "seenlist.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/seenlists/:id",
+      "handler": "seenlist.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/seenlists",
+      "handler": "seenlist.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/seenlists/:id",
+      "handler": "seenlist.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/seenlists/:id",
+      "handler": "seenlist.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

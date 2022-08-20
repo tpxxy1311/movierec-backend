@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seenlists",
+  "info": {
+    "name": "Seenlist"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "movies": {
+      "via": "seenlists",
+      "collection": "movies",
+      "dominant": true
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "seenlists",
+      "dominant": true
+    }
+  }
+}
